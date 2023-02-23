@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestTaskOnlineShop</string>
+    <string name="fragment_sign_in_header">Sign in</string>
+</resources>
