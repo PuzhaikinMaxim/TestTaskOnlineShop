@@ -48,7 +48,7 @@ class SignInViewModel @Inject constructor(
                 val result = signInUserUseCase.invoke(user)
 
                 if(result == AuthResult.SUCCESS){
-                    closeScreen()
+                    _shouldCloseScreen.postValue(Unit)
                 }
                 else{
                     _userAlreadyExistsError.postValue(Unit)
@@ -82,9 +82,5 @@ class SignInViewModel @Inject constructor(
 
     private fun validateEmail(email: String): Boolean {
         return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
-    }
-
-    private fun closeScreen() {
-        _shouldCloseScreen.postValue(Unit)
     }
 }

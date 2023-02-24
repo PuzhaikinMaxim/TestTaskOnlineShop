@@ -63,7 +63,7 @@ class SignInFragment: Fragment() {
         setupEmailErrorTextAppear()
         setupOnShouldCloseScreen()
         setupOnUserAlreadyExistsErrorToast()
-        setupFieldsNotFilledErrorToast()
+        setupOnFieldsNotFilledErrorToast()
     }
 
     private fun setupOnLogInTextViewClicked() {
@@ -104,7 +104,7 @@ class SignInFragment: Fragment() {
         }
     }
 
-    private fun setupFieldsNotFilledErrorToast() {
+    private fun setupOnFieldsNotFilledErrorToast() {
         viewModel.errorFieldsNotFilled.observe(requireActivity()){
             Toast.makeText(
                 requireActivity(),
