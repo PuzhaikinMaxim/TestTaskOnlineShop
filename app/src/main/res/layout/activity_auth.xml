@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fcv_auth_fragment_container"
+        android:id="@+id/fc_auth_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.puj.testtaskonlineshop.presentation.fragments.SignUpFragment" />
+        android:name="com.puj.testtaskonlineshop.presentation.fragments.SignInFragment" />
 </androidx.constraintlayout.widget.ConstraintLayout>
