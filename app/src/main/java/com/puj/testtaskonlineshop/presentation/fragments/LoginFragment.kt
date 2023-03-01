@@ -112,11 +112,7 @@ class LoginFragment: Fragment() {
 
     private fun setupOnShouldCloseScreen() {
         viewModel.shouldCloseScreen.observe(requireActivity()){
-            Toast.makeText(
-                requireActivity(),
-                "User has entered",
-                Toast.LENGTH_SHORT
-            ).show()
+            authFragmentContainer.startMainMenuActivity()
         }
     }
 

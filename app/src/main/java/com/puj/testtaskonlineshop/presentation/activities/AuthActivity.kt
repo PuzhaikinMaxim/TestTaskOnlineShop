@@ -24,4 +24,9 @@ class AuthActivity : AppCompatActivity(), AuthFragmentContainer {
             .commit()
     }
 
+    override fun startMainMenuActivity() {
+        val intent = MainMenuActivity.newIntent(this)
+        startActivity(intent)
+    }
+
 }

@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.puj.testtaskonlineshop.R
 import com.puj.testtaskonlineshop.databinding.FragmentSignInBinding
 import com.puj.testtaskonlineshop.presentation.TestTaskOnlineShopApplication
@@ -90,7 +91,7 @@ class SignInFragment: Fragment() {
 
     private fun setupOnShouldCloseScreen() {
         viewModel.shouldCloseScreen.observe(requireActivity()){
-            openLoginFragment()
+            authFragmentContainer.startMainMenuActivity()
         }
     }
 
