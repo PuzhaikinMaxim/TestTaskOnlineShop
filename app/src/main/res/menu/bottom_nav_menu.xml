@@ -14,5 +14,6 @@
         android:icon="@drawable/ic_messages" />
     <item android:id="@+id/t5"
         android:title=""
+        android:checked="true"
         android:icon="@drawable/ic_user" />
 </menu>

@@ -4,4 +4,7 @@
     <string name="user_already_exists_error_toast_text">User already exists</string>
     <string name="fields_not_filled_error_toast_text">Not all fields are filled</string>
     <string name="user_not_found_error_toast_text">User not found</string>
+    <string name="fragment_home_header">Trade by <font color="#4E55D7">bata</font></string>
+    <string name="price">$ %d,000</string>
+    <string name="discount_text">%d%% off</string>
 </resources>

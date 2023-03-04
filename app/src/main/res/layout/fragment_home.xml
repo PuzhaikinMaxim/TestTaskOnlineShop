@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cc_toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_burger_menu"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/fragment_home_header"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_user_image"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="11sp"
+                android:textColor="#5B5B5B"
+                android:text="Location" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_show_locations"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/sv_product"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:background="@drawable/bc_search"
+        android:hint="What are you looking for?"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cc_toolbar_container"
+        app:searchIcon="@drawable/ic_search_icon" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fl_categories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        app:justifyContent="space_between"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_product">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <com.google.android.material.button.MaterialButton
+                android:background="@drawable/bc_category"
+                android:layout_marginTop="5dp"
+                app:icon="@drawable/ic_phones"
+                tools:ignore="SpeakableTextPresentCheck"
+                style="@style/CategoryButton"/>
+            <TextView
+                android:text="Phone"
+                style="@style/CategoryName"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <com.google.android.material.button.MaterialButton
+                android:background="@drawable/bc_category"
+                app:icon="@drawable/ic_headphones"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:layout_marginTop="5dp"
+                style="@style/CategoryButton"/>
+            <TextView
+                android:text="Headphones"
+                style="@style/CategoryName"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bc_category"
+                app:iconGravity="top"
+                app:icon="@drawable/ic_games"
+                tools:ignore="SpeakableTextPresentCheck"
+                style="@style/CategoryButton"/>
+            <TextView
+                android:text="Games"
+                style="@style/CategoryName"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bc_category"
+                app:icon="@drawable/ic_cars"
+                tools:ignore="SpeakableTextPresentCheck"
+                style="@style/CategoryButton"/>
+            <TextView
+                android:text="Cars"
+                style="@style/CategoryName"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bc_category"
+                app:icon="@drawable/ic_furniture"
+                tools:ignore="SpeakableTextPresentCheck"
+                style="@style/CategoryButton"/>
+            <TextView
+                android:text="Furniture"
+                style="@style/CategoryName"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bc_category"
+                app:icon="@drawable/ic_kids"
+                tools:ignore="SpeakableTextPresentCheck"
+                style="@style/CategoryButton"/>
+            <TextView
+                android:text="Kids"
+                style="@style/CategoryName"/>
+        </LinearLayout>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fl_latest_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        app:justifyContent="space_between"
+        app:layout_constraintTop_toBottomOf="@id/fl_categories"
+        tools:layout_editor_absoluteX="15dp">
+
+        <TextView
+            style="@style/GoodsCategoryHeader"
+            android:text="Latest" />
+
+        <TextView
+            style="@style/ViewAllText"
+            android:text="View all" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_latest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_latest_header"
+        tools:listitem="@layout/item_latest_goods" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fl_flash_sale_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        app:justifyContent="space_between"
+        app:layout_constraintTop_toBottomOf="@id/rv_latest"
+        tools:layout_editor_absoluteX="15dp">
+
+        <TextView
+            style="@style/GoodsCategoryHeader"
+            android:text="Latest" />
+
+        <TextView
+            style="@style/ViewAllText"
+            android:text="View all" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_flash_sale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_flash_sale_header"
+        tools:listitem="@layout/item_flash_sale" />
+</androidx.constraintlayout.widget.ConstraintLayout>
