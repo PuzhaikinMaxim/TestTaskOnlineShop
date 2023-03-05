@@ -1,6 +1,7 @@
 package com.puj.testtaskonlineshop.data.database.dao
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
@@ -13,5 +14,5 @@ interface UserDao {
     suspend fun getUserByFirstName(firstName: String): UserDbModel?
 
     @Insert(onConflict = OnConflictStrategy.ABORT)
-    fun addUser(userDbModel: UserDbModel)
+    suspend fun addUser(userDbModel: UserDbModel)
 }

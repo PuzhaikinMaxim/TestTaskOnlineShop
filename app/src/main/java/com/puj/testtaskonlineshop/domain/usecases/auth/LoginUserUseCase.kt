@@ -1,4 +1,4 @@
-package com.puj.testtaskonlineshop.domain.usecases
+package com.puj.testtaskonlineshop.domain.usecases.auth
 
 import com.puj.testtaskonlineshop.domain.AuthResult
 import com.puj.testtaskonlineshop.domain.UserRepository

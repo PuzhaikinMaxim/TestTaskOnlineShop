@@ -7,9 +7,15 @@ import android.os.Bundle
 import android.util.AttributeSet
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.puj.testtaskonlineshop.R
 import com.puj.testtaskonlineshop.databinding.ActivityMainMenuContainerBinding
 
-class MainMenuActivity: AppCompatActivity() {
+class MainMenuActivity: AppCompatActivity(), MainMenuFragmentContainer {
 
     private lateinit var binding: ActivityMainMenuContainerBinding
 
@@ -18,6 +24,20 @@ class MainMenuActivity: AppCompatActivity() {
 
         binding = ActivityMainMenuContainerBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setupBottomMenu()
+    }
+
+    private fun setupBottomMenu() {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fc_main)
+                as NavHostFragment
+
+        binding.bnvBottom.setupWithNavController(navHostFragment.navController)
+    }
+
+    override fun startAuthActivity() {
+        val intent = AuthActivity.newIntent(this)
+        startActivity(intent)
     }
 
     companion object {
@@ -26,4 +46,6 @@ class MainMenuActivity: AppCompatActivity() {
             return Intent(context, MainMenuActivity::class.java)
         }
     }
+
+
 }

@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.puj.testtaskonlineshop.domain.AuthResult
 import com.puj.testtaskonlineshop.domain.models.User
-import com.puj.testtaskonlineshop.domain.usecases.SignInUserUseCase
+import com.puj.testtaskonlineshop.domain.usecases.auth.SignInUserUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject

@@ -90,6 +90,7 @@
                 android:textSize="14sp"
                 android:textColor="@color/white"
                 android:fontFamily="@font/montserrat_semibold"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -103,18 +104,20 @@
             android:layout_marginTop="10dp"
             android:layout_marginHorizontal="30dp"
             android:orientation="vertical"
+            android:clipChildren="false"
             app:layout_constraintTop_toBottomOf="@id/cl_upload_item_container"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:src="@drawable/ic_credit_card"
-                    android:translationZ="5dp"
+                    android:translationZ="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/btn_trade_store"
                     app:layout_constraintEnd_toEndOf="@+id/btn_trade_store"
                     app:layout_constraintStart_toStartOf="@+id/btn_trade_store"
@@ -152,6 +155,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_marginTop="20dp"
+                android:clipChildren="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -161,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:src="@drawable/ic_credit_card"
-                    android:translationZ="5dp"
+                    android:translationZ="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/btn_payment_method"
                     app:layout_constraintEnd_toEndOf="@+id/btn_payment_method"
                     app:layout_constraintStart_toStartOf="@+id/btn_payment_method"
@@ -200,6 +204,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clipChildren="false"
                 android:layout_marginTop="20dp">
 
                 <ImageView
@@ -208,7 +213,7 @@
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:src="@drawable/ic_credit_card"
-                    android:translationZ="5dp"
+                    android:translationZ="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/btn_balance"
                     app:layout_constraintEnd_toEndOf="@+id/btn_balance"
                     app:layout_constraintStart_toStartOf="@+id/btn_balance"
@@ -250,6 +255,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clipChildren="false"
                 android:layout_marginTop="20dp">
 
                 <ImageView
@@ -258,7 +264,7 @@
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:src="@drawable/ic_credit_card"
-                    android:translationZ="5dp"
+                    android:translationZ="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/btn_trade_history"
                     app:layout_constraintEnd_toEndOf="@+id/btn_trade_history"
                     app:layout_constraintStart_toStartOf="@+id/btn_trade_history"
@@ -297,6 +303,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clipChildren="false"
                 android:layout_marginTop="20dp">
 
                 <ImageView
@@ -304,7 +311,7 @@
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:src="@drawable/ic_restore"
-                    android:translationZ="5dp"
+                    android:translationZ="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/btn_restore_purchase"
                     app:layout_constraintEnd_toEndOf="@+id/btn_restore_purchase"
                     app:layout_constraintStart_toStartOf="@+id/btn_restore_purchase"
@@ -343,13 +350,14 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clipChildren="false"
                 android:layout_marginTop="20dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:src="@drawable/ic_help"
-                    android:translationZ="5dp"
+                    android:translationZ="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/btn_help"
                     app:layout_constraintEnd_toEndOf="@+id/btn_help"
                     app:layout_constraintStart_toStartOf="@+id/btn_help"
@@ -379,13 +387,14 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clipChildren="false"
                 android:layout_marginTop="20dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:focusable="false"
                     android:src="@drawable/ic_logout"
-                    android:translationZ="5dp"
+                    android:translationZ="10dp"
                     app:layout_constraintBottom_toBottomOf="@+id/btn_logout"
                     app:layout_constraintEnd_toEndOf="@+id/btn_logout"
                     app:layout_constraintStart_toStartOf="@+id/btn_logout"

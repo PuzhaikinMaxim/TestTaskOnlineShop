@@ -15,6 +15,7 @@
         <ImageView
             android:id="@+id/iv_background"
             android:layout_width="match_parent"
+            android:scaleType="center"
             tools:background="@color/purple_700"
             android:layout_height="match_parent" />
 
@@ -77,7 +78,7 @@
             android:clickable="false"
             android:focusable="false"
             android:src="@drawable/ic_plus"
-            android:translationZ="5dp"
+            android:translationZ="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/btn_add"
             app:layout_constraintEnd_toEndOf="@+id/btn_add"
             app:layout_constraintStart_toStartOf="@+id/btn_add"

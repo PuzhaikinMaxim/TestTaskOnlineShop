@@ -1,5 +1,7 @@
 package com.puj.testtaskonlineshop.presentation.activities
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -27,6 +29,13 @@ class AuthActivity : AppCompatActivity(), AuthFragmentContainer {
     override fun startMainMenuActivity() {
         val intent = MainMenuActivity.newIntent(this)
         startActivity(intent)
+    }
+
+    companion object {
+
+        fun newIntent(context: Context): Intent {
+            return Intent(context, AuthActivity::class.java)
+        }
     }
 
 }

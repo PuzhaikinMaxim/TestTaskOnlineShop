@@ -8,4 +8,8 @@
         android:id="@+id/userFragment"
         android:name="com.puj.testtaskonlineshop.presentation.fragments.UserFragment"
         android:label="UserFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.puj.testtaskonlineshop.presentation.fragments.HomeFragment"
+        android:label="HomeFragment" />
 </navigation>
