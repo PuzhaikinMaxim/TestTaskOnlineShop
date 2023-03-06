@@ -5,6 +5,9 @@
     <string name="fields_not_filled_error_toast_text">Not all fields are filled</string>
     <string name="user_not_found_error_toast_text">User not found</string>
     <string name="fragment_home_header">Trade by <font color="#4E55D7">bata</font></string>
-    <string name="price">$ %s,000</string>
+    <string name="price">$ %s</string>
     <string name="discount">%d%% off</string>
+    <string name="amount_of_reviews_text">(%d reviews)</string>
+    <string name="color_header">Color:</string>
+    <string name="quantity_header_text">Quantity: $d</string>
 </resources>
