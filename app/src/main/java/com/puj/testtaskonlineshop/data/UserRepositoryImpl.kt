@@ -26,7 +26,6 @@ class UserRepositoryImpl @Inject constructor(
             userDao.addUser(userDbModel)
             AuthResult.SUCCESS
         } catch (ex: Exception){
-            ex.printStackTrace()
             AuthResult.FAILURE
         }
     }
