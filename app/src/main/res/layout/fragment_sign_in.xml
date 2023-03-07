@@ -36,7 +36,7 @@
             
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/et_first_name"
-                android:hint="First name"
+                android:hint="@string/hint_first_name"
                 android:background="@drawable/bc_auth_fields"
                 android:singleLine="true"
                 android:autofillHints=""
@@ -49,7 +49,7 @@
                 android:id="@+id/et_last_name"
                 android:singleLine="true"
                 android:layout_marginTop="35dp"
-                android:hint="Last name"
+                android:hint="@string/hint_last_name"
                 android:background="@drawable/bc_auth_fields"
                 app:layout_constraintTop_toBottomOf="@id/et_first_name"
                 app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +60,7 @@
                 android:id="@+id/et_email"
                 android:singleLine="true"
                 android:layout_marginTop="35dp"
-                android:hint="Email"
+                android:hint="@string/hint_email"
                 android:background="@drawable/bc_auth_fields"
                 app:layout_constraintTop_toBottomOf="@id/et_last_name"
                 app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Email format is not valid"
+                android:text="@string/hint_email_format_is_not_valid"
                 android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +84,7 @@
                 android:layout_marginTop="35dp"
                 android:background="@drawable/bc_auth_buttons"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                android:text="Sign in"
+                android:text="@string/sign_in_button_text"
                 app:layout_constraintTop_toBottomOf="@id/et_email"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -104,7 +104,7 @@
                 style="@style/AuthHaveAccountText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already have an account?"
+                android:text="@string/already_have_an_account"
                 android:textColor="#808080" />
 
             <TextView
@@ -113,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="Log in"
+                android:text="@string/log_in_btn_text"
                 android:textColor="#254FE6" />
         </LinearLayout>
 
@@ -140,7 +140,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Sign in with Google"
+                    android:text="@string/sign_in_with_google"
                     style="@style/AuthAltSignUpOptionsText"
                     />
             </LinearLayout>
@@ -161,7 +161,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Sign in with Apple"
+                    android:text="@string/sign_in_with_apple"
                     style="@style/AuthAltSignUpOptionsText"
                     />
             </LinearLayout>

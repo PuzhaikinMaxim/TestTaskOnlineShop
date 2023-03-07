@@ -10,7 +10,7 @@
             android:id="@+id/tv_sign_in_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome back"
+            android:text="@string/header_login_text"
             android:layout_marginTop="120dp"
             android:height="50dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/et_first_name"
-                android:hint="First name"
+                android:hint="@string/hint_first_name_text"
                 android:background="@drawable/bc_auth_fields"
                 android:singleLine="true"
                 android:autofillHints=""
@@ -44,7 +44,7 @@
                 >
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/et_password"
-                    android:hint="Password"
+                    android:hint="@string/hint_password_text"
                     android:singleLine="true"
                     android:background="@drawable/bc_auth_fields"
                     android:paddingEnd="30dp"
@@ -73,7 +73,7 @@
                 style="@style/AuthButtons"
                 android:background="@drawable/bc_auth_buttons"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                android:text="Login"
+                android:text="@string/btn_login_text"
                 />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

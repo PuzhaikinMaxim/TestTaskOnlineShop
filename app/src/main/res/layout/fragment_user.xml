@@ -13,7 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="Profile"
+            android:text="@string/header_profile_text"
             android:textColor="@color/black"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_medium"
-            android:text="Change photo"
+            android:text="@string/change_photo_text"
             android:textColor="#808080"
             android:layout_marginTop="5dp"
             android:textSize="8sp"
@@ -85,7 +85,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="290dp"
                 android:layout_height="40dp"
-                android:text="Upload item"
+                android:text="@string/upload_item_btn_text"
                 android:textAllCaps="false"
                 android:textSize="14sp"
                 android:textColor="@color/white"
@@ -142,7 +142,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Trade store"
+                    android:text="@string/trade_store_text"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_trade_store"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -191,7 +191,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Payment_method"
+                    android:text="@string/payment_method_text"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_payment_method"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -240,7 +240,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Balance"
+                    android:text="@string/balance_text"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_balance"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -292,7 +292,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Trade history"
+                    android:text="@string/trade_history_text"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_trade_history"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -340,7 +340,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Restore purchase"
+                    android:text="@string/restore_purchase_text"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_restore_purchase"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -388,7 +388,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Help"
+                    android:text="@string/help_text"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_help"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -427,7 +427,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Log out"
+                    android:text="@string/log_out_text"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_logout"
                     app:layout_constraintTop_toTopOf="parent" />
