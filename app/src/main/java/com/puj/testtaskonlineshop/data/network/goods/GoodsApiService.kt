@@ -1,4 +1,4 @@
-package com.puj.testtaskonlineshop.data.network
+package com.puj.testtaskonlineshop.data.network.goods
 
 import com.puj.testtaskonlineshop.data.network.models.FlashSaleGoodsListDto
 import com.puj.testtaskonlineshop.data.network.models.LatestGoodsListDto

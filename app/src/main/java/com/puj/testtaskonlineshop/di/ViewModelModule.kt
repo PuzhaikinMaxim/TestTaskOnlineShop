@@ -3,6 +3,7 @@ package com.puj.testtaskonlineshop.di
 import androidx.lifecycle.ViewModel
 import com.puj.testtaskonlineshop.presentation.viewmodels.HomeViewModel
 import com.puj.testtaskonlineshop.presentation.viewmodels.LoginViewModel
+import com.puj.testtaskonlineshop.presentation.viewmodels.ProductViewModel
 import com.puj.testtaskonlineshop.presentation.viewmodels.SignInViewModel
 import dagger.Binds
 import dagger.Module
@@ -25,4 +26,9 @@ interface ViewModelModule {
     @IntoMap
     @ViewModelKey(HomeViewModel::class)
     fun bindHomeViewModel(viewModel: HomeViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ProductViewModel::class)
+    fun bindProductViewModel(viewModel: ProductViewModel): ViewModel
 }

@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import com.puj.testtaskonlineshop.data.mappers.FlashSaleGoodsMapper
 import com.puj.testtaskonlineshop.data.mappers.LatestGoodsMapper
-import com.puj.testtaskonlineshop.data.network.GoodsRemoteDataSource
+import com.puj.testtaskonlineshop.data.network.goods.GoodsRemoteDataSource
 import com.puj.testtaskonlineshop.data.network.models.FlashSaleGoodsDto
 import com.puj.testtaskonlineshop.data.network.models.LatestGoodsDto
 import com.puj.testtaskonlineshop.domain.GoodsRepository

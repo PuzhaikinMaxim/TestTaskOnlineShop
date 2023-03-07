@@ -26,6 +26,8 @@ class FlashSaleGoodsAdapter(
             field = value
         }
 
+    var onItemClickListener: (() -> Unit)? = null
+
     private var context: Context? = context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FlashSaleViewHolder {
@@ -52,6 +54,9 @@ class FlashSaleGoodsAdapter(
                 R.string.discount,
                 item.discount
             )
+            cvContainer.setOnClickListener {
+                onItemClickListener?.invoke()
+            }
         }
     }
 

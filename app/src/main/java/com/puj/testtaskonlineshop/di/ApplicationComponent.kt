@@ -3,6 +3,7 @@ package com.puj.testtaskonlineshop.di
 import android.app.Application
 import com.puj.testtaskonlineshop.presentation.fragments.HomeFragment
 import com.puj.testtaskonlineshop.presentation.fragments.LoginFragment
+import com.puj.testtaskonlineshop.presentation.fragments.ProductFragment
 import com.puj.testtaskonlineshop.presentation.fragments.SignInFragment
 import dagger.BindsInstance
 import dagger.Component
@@ -22,6 +23,8 @@ interface ApplicationComponent {
     fun inject(fragment: LoginFragment)
 
     fun inject(fragment: HomeFragment)
+
+    fun inject(fragment: ProductFragment)
 
     @Component.Factory
     interface Factory {

@@ -99,19 +99,22 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
+            android:id="@+id/ll_menu_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginHorizontal="30dp"
-            android:orientation="vertical"
+            android:layout_marginTop="10dp"
             android:clipChildren="false"
-            app:layout_constraintTop_toBottomOf="@id/cl_upload_item_container"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/cl_upload_item_container">
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clipChildren="false">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -138,8 +141,8 @@
                     style="@style/UserProfileItemText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Trade store"
                     android:layout_marginStart="10dp"
+                    android:text="Trade store"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_trade_store"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -147,17 +150,18 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_go_to"
                     android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_go_to"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_marginTop="20dp"
-                android:clipChildren="false"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clipChildren="false">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -186,8 +190,8 @@
                     style="@style/UserProfileItemText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Payment_method"
                     android:layout_marginStart="10dp"
+                    android:text="Payment_method"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_payment_method"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -195,17 +199,18 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_go_to"
                     android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_go_to"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clipChildren="false"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:clipChildren="false">
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -234,8 +239,8 @@
                     style="@style/UserProfileItemText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Balance"
                     android:layout_marginStart="10dp"
+                    android:text="Balance"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_balance"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -243,20 +248,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$ 1593"
                     android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="$ 1593"
                     android:textColor="#040402"
                     android:textSize="14sp"
-                    android:fontFamily="@font/montserrat_medium"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clipChildren="false"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:clipChildren="false">
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -285,8 +291,8 @@
                     style="@style/UserProfileItemText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Trade history"
                     android:layout_marginStart="10dp"
+                    android:text="Trade history"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_trade_history"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -294,17 +300,18 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_go_to"
                     android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_go_to"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clipChildren="false"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:clipChildren="false">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -332,8 +339,8 @@
                     style="@style/UserProfileItemText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Restore purchase"
                     android:layout_marginStart="10dp"
+                    android:text="Restore purchase"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_restore_purchase"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -341,17 +348,19 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_go_to"
                     android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_go_to"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clipChildren="false"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:clipChildren="false">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -378,17 +387,19 @@
                     style="@style/UserProfileItemText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Help"
                     android:layout_marginStart="10dp"
+                    android:text="Help"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_help"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clipChildren="false"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:clipChildren="false">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -415,12 +426,16 @@
                     style="@style/UserProfileItemText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Log out"
                     android:layout_marginStart="10dp"
+                    android:text="Log out"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/btn_logout"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toBottomOf="@+id/ll_menu_container"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

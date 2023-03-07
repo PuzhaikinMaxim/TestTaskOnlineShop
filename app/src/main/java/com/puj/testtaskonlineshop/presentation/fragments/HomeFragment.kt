@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.puj.testtaskonlineshop.R
 import com.puj.testtaskonlineshop.databinding.FragmentHomeBinding
 import com.puj.testtaskonlineshop.presentation.TestTaskOnlineShopApplication
 import com.puj.testtaskonlineshop.presentation.ViewModelFactory
@@ -66,6 +68,10 @@ class HomeFragment: Fragment() {
 
         viewModel.flashSaleGoods.observe(requireActivity()) {
             adapter.latestGoodsList = it
+        }
+
+        adapter.onItemClickListener = {
+            findNavController().navigate(R.id.action_homeFragment_to_productFragment)
         }
 
         binding.rvFlashSale.adapter = adapter

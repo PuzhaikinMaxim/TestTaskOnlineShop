@@ -9,5 +9,6 @@
     <string name="discount">%d%% off</string>
     <string name="amount_of_reviews_text">(%d reviews)</string>
     <string name="color_header">Color:</string>
-    <string name="quantity_header_text">Quantity: $d</string>
+    <string name="quantity_header_text">Quantity: %d</string>
+    <string name="add_to_cart_text">ADD TO CART</string>
 </resources>
