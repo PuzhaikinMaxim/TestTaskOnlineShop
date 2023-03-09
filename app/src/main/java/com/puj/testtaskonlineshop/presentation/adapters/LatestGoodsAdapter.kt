@@ -7,9 +7,9 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
+import com.puj.testtaskonlineshop.domain.models.LatestGoods
 import com.puj.testtaskonlineshop.R
 import com.puj.testtaskonlineshop.databinding.ItemLatestGoodsBinding
-import com.puj.testtaskonlineshop.domain.models.LatestGoods
 import com.puj.testtaskonlineshop.presentation.adapters.diff.LatestGoodsDiffCallback
 import com.puj.testtaskonlineshop.presentation.adapters.viewholders.LatestGoodsViewHolder
 import com.squareup.picasso.Picasso

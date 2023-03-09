@@ -7,9 +7,9 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
+import com.puj.testtaskonlineshop.domain.models.FlashSaleGoods
 import com.puj.testtaskonlineshop.R
 import com.puj.testtaskonlineshop.databinding.ItemFlashSaleBinding
-import com.puj.testtaskonlineshop.domain.models.FlashSaleGoods
 import com.puj.testtaskonlineshop.presentation.adapters.diff.FlashSaleGoodsDiffCallback
 import com.puj.testtaskonlineshop.presentation.adapters.viewholders.FlashSaleViewHolder
 import com.squareup.picasso.Picasso

@@ -1,6 +1,5 @@
 package com.puj.testtaskonlineshop.presentation.adapters.diff
 
-import androidx.recyclerview.widget.DiffUtil
 import com.puj.testtaskonlineshop.domain.models.LatestGoods
 
 class LatestGoodsDiffCallback(

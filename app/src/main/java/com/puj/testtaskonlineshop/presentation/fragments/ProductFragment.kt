@@ -12,9 +12,9 @@ import android.widget.RadioButton
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.puj.testtaskonlineshop.domain.models.Product
 import com.puj.testtaskonlineshop.R
 import com.puj.testtaskonlineshop.databinding.FragmentProductBinding
-import com.puj.testtaskonlineshop.domain.models.Product
 import com.puj.testtaskonlineshop.presentation.TestTaskOnlineShopApplication
 import com.puj.testtaskonlineshop.presentation.ViewModelFactory
 import com.puj.testtaskonlineshop.presentation.viewmodels.ProductViewModel
